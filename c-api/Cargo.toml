@@ -3,6 +3,7 @@ name = "comrak_ffi"
 version = "0.1.0"
 description = "FFI bindings for the comrak crate"
 edition = "2018"
+build = "build.rs"
 
 [dependencies]
 comrak = { path = "../" }
@@ -11,6 +12,7 @@ paste = "1.0"
 
 [build-dependencies]
 cc = "1.0.46"
+libtool = "0.1"
 
 [profile.release]
 panic = "abort"
